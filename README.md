@@ -19,10 +19,14 @@ graph TD
     A[Raw Raman Spectra] --> B[Spectral Preprocessor]
     B -->|SNV + Savitzky-Golay| C[Processed Spectra]
     C --> D{BioShift PLS Engine}
-    F[Sparse Offline Data \n 'Batch 1'] -.->|Calibration Transfer| D
-    D -->|Bias Corrected| E[Real-Time Concentration Prediction]
+    F[Sparse Offline Data<br/>From 'Batch 1'] -.->|Calibration Transfer| D
+    D -->|Bias Corrected| E[Real-Time Predictions]
     E --> G[(Bioprocess Digital Twin)]
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
-    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style A fill:#E3F2FD,stroke:#0D47A1,stroke-width:2px,color:#0D47A1
+    style B fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#E65100
+    style C fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#E65100
+    style D fill:#EDE7F6,stroke:#4A148C,stroke-width:2px,color:#4A148C
+    style F fill:#F3E5F5,stroke:#4A148C,stroke-dasharray: 5 5,color:#4A148C
+    style E fill:#E8F5E9,stroke:#1B5E20,stroke-width:2px,color:#1B5E20
+    style G fill:#ECEFF1,stroke:#263238,stroke-width:2px,color:#263238
