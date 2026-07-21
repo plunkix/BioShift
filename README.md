@@ -6,13 +6,13 @@ Commercial PAT systems often lock chemometric modeling behind closed ecosystems.
 
 It handles the complete mathematical translation of spectral data—from eliminating heavy culture media fluorescence via Savitzky-Golay derivatives, to extracting target analyte concentrations using Partial Least Squares (PLS) regression.
 
-## 🚀 Key Features
+##  Key Features
 
 *   **Spectral Pre-processing:** Implements Standard Normal Variate (SNV) and Savitzky-Golay filtering to eliminate baseline drift and background fluorescence.
 *   **High-Dimensional PLS Engine:** Optimized Partial Least Squares regression for mapping hundreds of Raman shifts to singular target concentrations (e.g., Glucose, Lactate).
 *   **One-Batch Transfer Learning (TLA):** Instantly localize a generalized base model to a new bioreactor environment using bias-correction algorithms on sparse offline reference data.
 
-## 🧠 System Architecture
+##  System Architecture
 
 ```mermaid
 graph TD
@@ -23,6 +23,7 @@ graph TD
     D -->|Bias Corrected| E[Real-Time Predictions]
     E --> G[(Bioprocess Digital Twin)]
     
+<<<<<<< HEAD
     style A fill:#E3F2FD,stroke:#0D47A1,stroke-width:2px,color:#0D47A1
     style B fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#E65100
     style C fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#E65100
@@ -30,3 +31,8 @@ graph TD
     style F fill:#F3E5F5,stroke:#4A148C,stroke-dasharray: 5 5,color:#4A148C
     style E fill:#E8F5E9,stroke:#1B5E20,stroke-width:2px,color:#1B5E20
     style G fill:#ECEFF1,stroke:#263238,stroke-width:2px,color:#263238
+=======
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style G fill:#bbf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+>>>>>>> 65f9c5082405d4ad6909e2bae48ebcf8c1d9e211
